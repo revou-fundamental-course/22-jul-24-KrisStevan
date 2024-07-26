@@ -1,0 +1,85 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    align-items: center;
+}
+
+.logo-icon{
+    background-image: url("data:image/png;base64,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");
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+}
+
+.nav-container{
+    display: flex;
+}
+
+.nav-item{
+    padding: 8px;
+}
+
+.main-title{
+    text-align: center;
+}
+
+.main-content{
+    display: flex;
+}
+
+.main-content-item{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 2;
+}
+
+.main-content-form{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    background-color: silver;
+}
+
+.main-content-banner{
+    width: 95%;
+    height: 150px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/eb/Wembley_Stadium_interior_-_geograph.org.uk_-_662906.jpg");
+}
+
+.item-icon{
+    height: 25px;
+    width: 25px;
+    background-image: url("https://m.media-amazon.com/images/M/MV5BODk2ODIwMjU4NV5BMl5BanBnXkFtZTcwMzUxODY1NA@@._V1_.jpg");
+    border-radius: 50%;
+}
+
+.main-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid aqua;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+button{
+    width: 70%;
+    height: 32px;
+    background-color: aliceblue;
+    border: none;
+}
