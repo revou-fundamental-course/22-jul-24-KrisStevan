@@ -31,7 +31,7 @@ nav{
 }
 
 .nav-item:hover{
-    background-color: rgb(160, 140, 25);
+    background-color: rgb(195, 208, 218);
 }
 
 .main-title{
@@ -48,7 +48,7 @@ nav{
 .main-content{
     display: flex;
     margin-right: 5%;
-    padding: 100px 0px 0px 0px;
+    padding: 50px 0px 0px 0px;
 }
 
 .main-content-item{
@@ -57,7 +57,8 @@ nav{
     flex-direction: column;
     align-items: center;
     flex: 1.2;
-    margin-left: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .main-content-form{
@@ -68,7 +69,7 @@ nav{
     align-items: center;
     flex: 1;
     background-color: #e1ded7;
-    margin-right: 10%;
+    margin-right: 5%;
 }
 
 .main-content-banner{
@@ -79,14 +80,15 @@ nav{
 
 .main-content-article{
     width: 95%;
-
 }
 
 .item-icon{
-    height: 25px;
-    width: 25px;
+    height: 50px;
+    width: 50px;
     background-image: url("https://m.media-amazon.com/images/M/MV5BODk2ODIwMjU4NV5BMl5BanBnXkFtZTcwMzUxODY1NA@@._V1_.jpg");
     border-radius: 50%;
+    margin-right: 10px;
+    background-size: cover;
 }
 
 .subtitle{
@@ -99,8 +101,8 @@ nav{
 .sender{
     display: flex;
     align-items: center;
-    align-self: flex-start;
-    margin-left: 20%;
+    flex-direction: row;
+    align-self: center;
 }
 
 .item-owner > h3{
@@ -112,6 +114,8 @@ nav{
     align-items: center;
     justify-content: center;
     flex-direction:column;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 input, select{
@@ -140,39 +144,79 @@ label, h2{
     margin-right: 30px;
 }
 
-ol.features{
+.bg-green {
     background-color: #566453;
-    /*
-    background-color: #566453;
-    border-radius:50%;
-    box-shadow: 0 0 0 3px #2b2929;
-    margin: 10px 20px 10px 20px;
-*/
 }
 
 .transition-title{
     text-align: center;
-    background-color: #b19e9e;
-
+    display: flex;
+    background-color:rgb(200 223 227);
+    height: 100px;
+    justify-content: center;
+    align-items: center;
 }
 
 .next-content-detail{
     display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
     padding: 10px;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    align-content: flex-start;
+    width: 300px;
 }
 
 .detail-icon{
-    width: 200px;
-    height: 200px;
+    width: 50px;
+    height: 50px;
     background-image: url("../images/Honolulu.jpg");
+    border-radius: 50%;
+    margin-right: 10px;
+    background-size: cover;
 }
 
 .next-content{
     display: flex;
     margin-left: 10%;
-    margin-right: 5%;
+    margin-right: 10%;
     justify-content: center;
+}
+
+.feature-list{
+    display: flex;
+    align-self: flex-start;
+    margin-left: 10%;
+    align-items: center;
+}
+
+.item-num1{
+    height: 70px;
+    width: 85px;
+    background-image: url("../images/1.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.item-num2{
+    height: 70px;
+    width: 100px;
+    background-image: url("../images/2.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.item-num3{
+    height: 70px;
+    width: 180px;
+    background-image: url("../images/3.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 10px;
 }
