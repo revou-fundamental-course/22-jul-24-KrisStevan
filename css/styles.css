@@ -1,8 +1,17 @@
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
     padding: 12px;
     align-items: center;
+    background-color: rgb(200 223 227);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
 }
 
 .logo-icon{
@@ -18,39 +27,59 @@ nav{
 
 .nav-item{
     padding: 8px;
+    text-decoration: none;
+}
+
+.nav-item:hover{
+    background-color: rgb(160, 140, 25);
 }
 
 .main-title{
+    display: flex;
     text-align: center;
+    height: 610px;
+    background-image: url("../images/Busan.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .main-content{
     display: flex;
+    margin-right: 5%;
+    padding: 100px 0px 0px 0px;
 }
 
 .main-content-item{
     width: 100%;
-    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 2;
+    flex: 1.2;
+    margin-left: 10%;
 }
 
 .main-content-form{
     width: 100%;
-    height: 250px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1;
-    background-color: silver;
+    background-color: #e1ded7;
+    margin-right: 10%;
 }
 
 .main-content-banner{
     width: 95%;
-    height: 150px;
+    height: 450px;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/eb/Wembley_Stadium_interior_-_geograph.org.uk_-_662906.jpg");
+}
+
+.main-content-article{
+    width: 95%;
+
 }
 
 .item-icon{
@@ -60,26 +89,90 @@ nav{
     border-radius: 50%;
 }
 
+.subtitle{
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.sender{
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    margin-left: 20%;
+}
+
+.item-owner > h3{
+    margin-bottom: -10px;
+}
+
 .main-item{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction:column;
 }
 
-input{
-    width: 70%;
+input, select{
+    width: 83%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 2px solid aqua;
+    border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-family: monospace;
 }
 
 button{
-    width: 70%;
-    height: 32px;
+    width: 83%;
+    height: 30px;
     background-color: aliceblue;
     border: none;
+    margin-top: 12px;
+}
+
+label, h2{
+    width: 70%;
+    align-self: baseline;
+    padding: 12px 12px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+ol.features{
+    background-color: #566453;
+    /*
+    background-color: #566453;
+    border-radius:50%;
+    box-shadow: 0 0 0 3px #2b2929;
+    margin: 10px 20px 10px 20px;
+*/
+}
+
+.transition-title{
+    text-align: center;
+    background-color: #b19e9e;
+
+}
+
+.next-content-detail{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.detail-icon{
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/Honolulu.jpg");
+}
+
+.next-content{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 5%;
+    justify-content: center;
 }
