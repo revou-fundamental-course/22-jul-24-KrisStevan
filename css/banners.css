@@ -1,6 +1,7 @@
-.main-banner-container{
-    height: 150px;
-    width: 100%;
+.main-content-banner{
+    width: 95%;
+    height: 450px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/eb/Wembley_Stadium_interior_-_geograph.org.uk_-_662906.jpg");
 }
 
 .banner-1{

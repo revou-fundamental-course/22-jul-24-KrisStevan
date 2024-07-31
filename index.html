@@ -77,7 +77,7 @@
                 </div>
             </article>
 
-            <form action="" class="main-content-form">
+            <form name="main-content-form" class="main-content-form" onsubmit="return validateForm()">
                 <h2>Contacto</h2>
 
                 <label>
@@ -99,7 +99,7 @@
                 </select>
                 <br/>
 
-                <button type="button">Submit</button>
+                <input type="submit" class="button" value="Submit"/>
             </form>
         </section>
 
@@ -176,5 +176,7 @@
             </ul>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

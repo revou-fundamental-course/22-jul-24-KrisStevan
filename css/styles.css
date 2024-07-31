@@ -72,12 +72,6 @@ nav{
     margin-right: 5%;
 }
 
-.main-content-banner{
-    width: 95%;
-    height: 450px;
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/eb/Wembley_Stadium_interior_-_geograph.org.uk_-_662906.jpg");
-}
-
 .main-content-article{
     width: 95%;
 }
@@ -128,9 +122,9 @@ input, select{
     box-sizing: border-box;
 }
 
-button{
+.button{
     width: 83%;
-    height: 30px;
+    height: 35px;
     background-color: aliceblue;
     border: none;
     margin-top: 12px;
