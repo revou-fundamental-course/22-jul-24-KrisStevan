@@ -1,0 +1,26 @@
+.main-banner-container{
+    height: 150px;
+    width: 100%;
+}
+
+.banner-1{
+    background-image: url(../assets/1.jpg);
+}
+
+.banner-2{
+    background-image: url(../assets/2.jpg);
+}
+
+.banner-3{
+    background-image: url(../assets/3.jpg);
+}
+
+.banner-4{
+    background-image: url(../assets/4.jpg);
+}
+
+@media only screen and (max-width: 400px){
+    .main-content{
+        flex-direction: column;
+    }
+}

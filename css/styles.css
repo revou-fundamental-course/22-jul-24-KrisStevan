@@ -182,6 +182,7 @@ label, h2{
     margin-left: 10%;
     margin-right: 10%;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .feature-list{
@@ -219,4 +220,25 @@ label, h2{
     background-size: cover;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    height: 200px;
+    color: white;
+    align-content: center;
+}
+
+.footer-detail{
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+.footer-social{
+    list-style-type: none;
+    margin-left: -30%;
 }
