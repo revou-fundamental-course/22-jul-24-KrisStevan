@@ -15,20 +15,42 @@
         </header>
 
         <section class="nav-container">
-            <a href="" class="nav-item">Home</a>
-            <a href="" class="nav-item">Our Package</a>
-            <a href="" class="nav-item">Call Us</a>
+            <a href="#main-title" class="nav-item">Home</a>
+            <a href="#transition-title" class="nav-item">Our Package</a>
+            <a href="#main-content-form" class="nav-item">Call Us</a>
         </section>
     </nav>
 
-    <main>
-        <article class="main-title">
-            <header>
-                <h1>Tus agentes de viajes de confianza</h1>
-            </header>
-            <p>
-                Tu felicidad es nuestra felicidad.
-            </p>
+    <main style="background-color: #4b8e95;">
+        <article class="main-title" id="main-title">
+            <div class="main-banner-container" onclick="nextSlide(2)">
+                <div class="main-content-title title-1">
+                    <header class="title-header">
+                        <h1>Tus agentes de viajes de confianza</h1>
+                    </header>
+                    <p>
+                        Tu felicidad es nuestra felicidad.
+                    </p>
+                </div>
+
+                <div class="main-content-title title-2">
+                    <header class="title-header">
+                        <h1>Tus agentes de viajes de confianza</h1>
+                    </header>
+                    <p>
+                        Tu felicidad es nuestra felicidad.
+                    </p>
+                </div>
+
+                <div class="main-content-title title-3">
+                    <header class="title-header">
+                        <h1>Tus agentes de viajes de confianza</h1>
+                    </header>
+                    <p>
+                        Tu felicidad es nuestra felicidad.
+                    </p>
+                </div>
+            </div>
         </article>
 
         <section class="main-content">
@@ -77,7 +99,7 @@
                 </div>
             </article>
 
-            <form name="main-content-form" class="main-content-form" onsubmit="return validateForm()">
+            <form name="main-content-form" class="main-content-form" id="main-content-form" onsubmit="return validateForm()">
                 <h2>Contacto</h2>
 
                 <label>
@@ -85,17 +107,20 @@
                 </label>
                 <br/>
 
-                <label for="name">Your Name</label>
+                <label for="name">Tu Nombre</label>
                 <input type="text" name="name"/>
 
-                <label for="fname">Email Address</label>
+                <label for="fname">Dirección de correo electrónico</label>
                 <input type="text" name="email"/>
 
-                <label for="fname">What are you interested in?</label>
+                <label for="fname">¿En que estas interesado?</label>
                 <select>
-                    <option value="">Merah</option>
-                    <option value="">Kuning</option>
-                    <option selected value="">Hijau</option>
+                    <option value="">Rojo</option>
+                    <option value="">Amarillo</option>
+                    <option selected value="">Verde</option>
+                    <option selected value="">Azul</option>
+                    <option selected value="">Gris</option>
+                    <option selected value="">Blanco</option>
                 </select>
                 <br/>
 
@@ -103,7 +128,7 @@
             </form>
         </section>
 
-        <section class="transition-title">
+        <section class="transition-title" id="transition-title">
             <h1>Nuestros paquetes</h1>
         </section>
 
@@ -158,7 +183,7 @@
         </section>
     </main>
     <footer>
-        <div class="footer-detail">
+        <div class="footer-detail" id="footer-detail">
             <h6>Top Destinations</h6>
             <ul class="footer-nav">
                 <li>Monaco</li>
@@ -178,5 +203,6 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/banner.js"></script>
 </body>
 </html>

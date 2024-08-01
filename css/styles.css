@@ -38,17 +38,49 @@ nav{
     display: flex;
     text-align: center;
     height: 610px;
-    background-image: url("../images/Busan.jpg");
+    
+}
+
+.main-banner-container{
+    display: flex;
+    text-align: center;
+    height: 610px;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: column;
     justify-content: center;
 }
 
+.title-1{
+    background-image: url("../images/Busan.jpg");
+    background-size: cover;
+}
+
+.title-2{
+    background-image: url("../images/Honolulu.jpg");
+    background-size: cover;
+}
+
+.title-3{
+    background-image: url("../images/Isle\ Of\ Man.jpg");
+    background-size: cover;
+}
+
+.main-content-title{
+    height: 610px;
+    width: 100%;
+    align-content: center;
+}
+
+.main-content-title > header > h1{
+    opacity: 100%;
+}
+
 .main-content{
     display: flex;
     margin-right: 5%;
-    padding: 50px 0px 0px 0px;
+    padding: 50px 0px 50px 0px;
 }
 
 .main-content-item{
@@ -198,7 +230,7 @@ label, h2{
 
 .item-num2{
     height: 70px;
-    width: 100px;
+    width: 110px;
     background-image: url("../images/2.PNG");
     background-repeat: no-repeat;
     background-size: cover;
@@ -208,7 +240,7 @@ label, h2{
 
 .item-num3{
     height: 70px;
-    width: 180px;
+    width: 190px;
     background-image: url("../images/3.PNG");
     background-repeat: no-repeat;
     background-size: cover;
@@ -235,4 +267,30 @@ footer{
 .footer-social{
     list-style-type: none;
     margin-left: -30%;
+}
+
+@media only screen and (max-width: 400px){
+    .main-content{
+        flex-direction: column;
+    }
+
+    footer{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .item-num1{
+        height: 40px;
+        width: 90px;
+    }
+
+    .item-num2{
+        height: 40px;
+        width: 120px;
+    }
+
+    .item-num3{
+        height: 40px;
+        width: 200px;
+    }
 }
